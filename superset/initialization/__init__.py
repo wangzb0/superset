@@ -223,27 +223,27 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
         #
         appbuilder.add_link(
             "Home",
-            label=__("Home"),
-            # label=__("首页"),
+            # label=__("Home"),
+            label=__("首页"),
             href="/superset/welcome/",
             cond=lambda: bool(appbuilder.app.config["LOGO_TARGET_PATH"]),
         )
         appbuilder.add_view(
             AnnotationLayerModelView,
             "Annotation Layers",
-            label=__("Annotation Layers"),
-            # label=__("注释层"),
+            # label=__("Annotation Layers"),
+            label=__("注释层"),
             icon="fa-comment",
             category="Manage",
-            category_label=__("Manage"),
-            # category_label=__("管理"),
+            # category_label=__("Manage"),
+            category_label=__("管理"),
             category_icon="",
         )
         appbuilder.add_view(
             DashboardModelView,
             "Dashboards",
-            label=__("Dashboards"),
-            # label=__("看板"),
+            # label=__("Dashboards"),
+            label=__("看板"),
             icon="fa-dashboard",
             category="",
             category_icon="",
@@ -251,8 +251,8 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
         appbuilder.add_view(
             SliceModelView,
             "Charts",
-            label=__("Charts"),
-            # label=__("图表"),
+            # label=__("Charts"),
+            label=__("图表"),
             icon="fa-bar-chart",
             category="",
             category_icon="",
@@ -260,11 +260,11 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
         appbuilder.add_view(
             DynamicPluginsView,
             "Plugins",
-            label=__("Plugins"),
-            # label=__("插件"),
+            # label=__("Plugins"),
+            label=__("插件"),
             category="Manage",
-            category_label=__("Manage"),
-            # category_label=__("管理"),
+            # category_label=__("Manage"),
+            category_label=__("管理"),
             icon="fa-puzzle-piece",
             menu_cond=lambda: feature_flag_manager.is_feature_enabled(
                 "DYNAMIC_PLUGINS"
@@ -273,22 +273,22 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
         appbuilder.add_view(
             CssTemplateModelView,
             "CSS Templates",
-            label=__("CSS Templates"),
-            # label=__("CSS模板"),
+            # label=__("CSS Templates"),
+            label=__("CSS模板"),
             icon="fa-css3",
             category="Manage",
-            category_label=__("Manage"),
-            # category_label=__("管理"),
+            # category_label=__("Manage"),
+            category_label=__("管理"),
             category_icon="",
         )
         appbuilder.add_view(
             RowLevelSecurityFiltersModelView,
             "Row Level Security",
-            label=__("Row Level Security"),
-            # label="行级安全",
+            # label=__("Row Level Security"),
+            label="行级安全",
             category="Security",
-            category_label=__("Security"),
-            # category_label=__("安全"),
+            # category_label=__("Security"),
+            category_label=__("安全"),
             icon="fa-lock",
         )
 
@@ -324,13 +324,13 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
         #
         appbuilder.add_link(
             "Import Dashboards",
-            label=__("Import Dashboards"),
-            # label=__("导入仪表盘"),
+            # label=__("Import Dashboards"),
+            label=__("导入看板"),
             href="/superset/import_dashboards/",
             icon="fa-cloud-upload",
             category="Manage",
-            category_label=__("Manage"),
-            # category_label=__("管理"),
+            # category_label=__("Manage"),
+            category_label=__("管理"),
             category_icon="fa-wrench",
             cond=lambda: not feature_flag_manager.is_feature_enabled(
                 "VERSIONED_EXPORT"
@@ -338,56 +338,55 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
         )
         appbuilder.add_link(
             "SQL Editor",
-            label=_("SQL Editor"),
-            # label=_("SQL编辑器"),
+            # label=_("SQL Editor"),
+            label=_("SQL编辑器"),
             href="/superset/sqllab/",
             category_icon="fa-flask",
             icon="fa-flask",
             category="SQL Lab",
-            category_label=__("SQL Lab"),
-            # category_label=__("SQL工具箱"),
+            # category_label=__("SQL Lab"),
+            category_label=__("SQL工具箱"),
         )
         appbuilder.add_link(
             "Saved Queries",
-            label=__("Saved Queries"),
-            # label=__("已保存查询"),
+            label=__("已保存查询"),
             href="/savedqueryview/list/",
             icon="fa-save",
             category="SQL Lab",
-            category_label=__("SQL Lab"),
-            # category_label=__("SQL工具箱"),
+            # category_label=__("SQL Lab"),
+            category_label=__("SQL工具箱"),
         )
         appbuilder.add_link(
             "Query Search",
-            label=_("Query History"),
-            # label=_("查询历史"),
+            # label=_("Query History"),
+            label=_("查询历史"),
             href="/superset/sqllab/history/",
             icon="fa-search",
             category_icon="fa-flask",
             category="SQL Lab",
-            category_label=__("SQL Lab"),
-            # category_label=__("SQL工具箱"),
+            # category_label=__("SQL Lab"),
+            category_label=__("SQL工具箱"),
         )
         appbuilder.add_view(
             DatabaseView,
             "Databases",
-            label=__("Databases"),
-            # label=__("数据库"),
+            # label=__("Databases"),
+            label=__("数据库"),
             icon="fa-database",
             category="Data",
-            category_label=__("Data"),
-            # category_label=__("数据"),
+            # category_label=__("Data"),
+            category_label=__("数据"),
             category_icon="fa-database",
         )
         appbuilder.add_link(
             "Datasets",
-            label=__("Datasets"),
-            # label=__("数据集"),
+            # label=__("Datasets"),
+            label=__("数据集"),
             href="/tablemodelview/list/",
             icon="fa-table",
             category="Data",
-            category_label=__("Data"),
-            # category_label=__("数据"),
+            # category_label=__("Data"),
+            category_label=__("数据"),
             category_icon="fa-table",
         )
         appbuilder.add_separator("Data")
@@ -396,11 +395,11 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
         appbuilder.add_view(
             LogModelView,
             "Action Log",
-            label=__("Action Log"),
-            # label=__("操作日志"),
+            # label=__("Action Log"),
+            label=__("操作日志"),
             category="Security",
-            category_label=__("Security"),
-            # category_label=__("安全"),
+            # category_label=__("Security"),
+            category_label=__("安全"),
             icon="fa-list-ol",
             menu_cond=lambda: (
                 self.config["FAB_ADD_SECURITY_VIEWS"]
@@ -415,11 +414,11 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
         appbuilder.add_view(
             AlertView,
             "Alerts & Report",
-            label=__("Alerts & Reports"),
-            # label=__("警报和报告"),
+            # label=__("Alerts & Reports"),
+            label=__("警报和报告"),
             category="Manage",
-            category_label=__("Manage"),
-            # category_label=__("管理"),
+            # category_label=__("Manage"),
+            category_label=__("管理"),
             icon="fa-exclamation-triangle",
             menu_cond=lambda: feature_flag_manager.is_feature_enabled("ALERT_REPORTS"),
         )
@@ -427,11 +426,11 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
         appbuilder.add_view(
             AccessRequestsModelView,
             "Access requests",
-            label=__("Access requests"),
-            # label=__("访问请求"),
+            # label=__("Access requests"),
+            label=__("访问请求"),
             category="Security",
-            category_label=__("Security"),
-            # category_label=__("安全"),
+            # category_label=__("Security"),
+            category_label=__("安全"),
             icon="fa-table",
             menu_cond=lambda: bool(self.config["ENABLE_ACCESS_REQUEST"]),
         )
@@ -445,23 +444,23 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
         appbuilder.add_view(
             DruidDatasourceModelView,
             "Druid Datasources",
-            label=__("Druid Datasources"),
-            # label=__("Druid数据源"),
+            # label=__("Druid Datasources"),
+            label=__("Druid数据源"),
             category="Data",
-            category_label=__("Data"),
-            # category_label=__("数据"),
+            # category_label=__("Data"),
+            category_label=__("数据"),
             icon="fa-cube",
             menu_cond=lambda: bool(self.config["DRUID_IS_ACTIVE"]),
         )
         appbuilder.add_view(
             DruidClusterModelView,
             name="Druid Clusters",
-            label=__("Druid Clusters"),
-            # label=__("Druid集群"),
+            # label=__("Druid Clusters"),
+            label=__("Druid集群"),
             icon="fa-cubes",
             category="Data",
-            category_label=__("Data"),
-            # category_label=__("数据"),
+            # category_label=__("Data"),
+            category_label=__("数据"),
             category_icon="fa-database",
             menu_cond=lambda: bool(self.config["DRUID_IS_ACTIVE"]),
         )
@@ -471,12 +470,12 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
 
         appbuilder.add_link(
             "Scan New Datasources",
-            label=__("Scan New Datasources"),
-            # label=__("更多数据源"),
+            # label=__("Scan New Datasources"),
+            label=__("更多数据源"),
             href="/druid/scan_new_datasources/",
             category="Data",
-            category_label=__("Data"),
-            # category_label=__("数据"),
+            # category_label=__("Data"),
+            category_label=__("数据"),
             category_icon="fa-database",
             icon="fa-refresh",
             cond=lambda: bool(
@@ -487,12 +486,12 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
         appbuilder.add_view_no_menu(ReportView)
         appbuilder.add_link(
             "Refresh Druid Metadata",
-            label=__("Refresh Druid Metadata"),
-            # label=__("刷新Druid元数据"),
+            # label=__("Refresh Druid Metadata"),
+            label=__("刷新Druid元数据"),
             href="/druid/refresh_datasources/",
             category="Data",
-            category_label=__("Data"),
-            # category_label=__("数据"),
+            # category_label=__("Data"),
+            category_label=__("数据"),
             category_icon="fa-database",
             icon="fa-cog",
             cond=lambda: bool(
