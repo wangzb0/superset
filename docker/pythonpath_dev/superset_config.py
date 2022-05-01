@@ -112,3 +112,9 @@ try:
     )
 except ImportError:
     logger.info("Using default Docker config...")
+
+
+APP_ICON = "/static/assets/images/pinbi-logo-horiz.png"
+APP_NAME = "PinBI"
+FAVICONS = [{"href": "/static/assets/images/pinbi-favicon.png"}]
+BABEL_DEFAULT_LOCALE = "zh"
