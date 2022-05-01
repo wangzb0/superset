@@ -116,5 +116,5 @@ except ImportError:
 
 APP_ICON = "/static/assets/images/pinbi-logo-horiz.png"
 APP_NAME = "PinBI"
-FAVICONS = [{"href": "/static/assets/images/pinbi-favicon.png"}]
+FAVICONS = [{"href": "/static/assets/images/favicon.png"}]
 BABEL_DEFAULT_LOCALE = "zh"

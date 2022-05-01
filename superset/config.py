@@ -89,8 +89,8 @@ PACKAGE_JSON_FILE = pkg_resources.resource_filename(
 #     "type": "image/png"
 #     "rel": "icon"
 # },
-# FAVICONS = [{"href": "/static/assets/images/favicon.png"}]
-FAVICONS = [{"href": "/static/assets/images/pinbi-favicon.png"}]
+# FAVICONS = [{"href": "/static/assets/images/system-favicon.png"}]
+FAVICONS = [{"href": "/static/assets/images/favicon.png"}]
 
 
 def _try_json_readversion(filepath: str) -> Optional[str]:
