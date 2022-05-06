@@ -2556,10 +2556,7 @@ class BaseDeckGLViz(BaseViz):
 
         if df.get(key) is None:
             raise NullValueException(
-                _(
-                    "Encountered invalid NULL spatial entry, \
-                                       please consider filtering those out"
-                )
+                _("Encountered invalid NULL spatial entry, please consider filtering those out")
             )
         return df
 

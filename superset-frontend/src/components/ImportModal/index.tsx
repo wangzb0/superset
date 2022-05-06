@@ -297,7 +297,8 @@ const ImportModelsModal: FunctionComponent<ImportModelsModalProps> = ({
           customRequest={() => {}}
           disabled={importingModel}
         >
-          <Button loading={importingModel}>Select file</Button>
+          {/*<Button loading={importingModel}>Select file</Button>*/}
+          <Button loading={importingModel}>选择文件</Button>
         </Upload>
       </StyledInputContainer>
       {errorMessage && <ErrorAlert errorMessage={errorMessage} />}

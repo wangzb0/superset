@@ -389,7 +389,7 @@ export const ControlPanelsContainer = (props: ControlPanelsContainerProps) => {
           <InfoTooltipWithTrigger
             label="validation-errors"
             bsStyle="danger"
-            tooltip="This section contains validation errors"
+            tooltip={t("This section contains validation errors")}
           />
         )}
       </span>

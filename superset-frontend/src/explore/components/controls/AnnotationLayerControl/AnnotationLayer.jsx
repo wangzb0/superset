@@ -386,8 +386,7 @@ export default class AnnotationLayer extends React.PureComponent {
       } else {
         label = t('Chart');
         description = t(
-          `Use another existing chart as a source for annotations and overlays.
-          Your chart must be one of these visualization types: [%s]`,
+          `Use another existing chart as a source for annotations and overlays. Your chart must be one of these visualization types: [%s]`,
           this.getSupportedSourceTypes(annotationType)
             .map(x => x.label)
             .join(', '),
@@ -465,8 +464,7 @@ export default class AnnotationLayer extends React.PureComponent {
           <PopoverSection
             isSelected
             title={t('Annotation Slice Configuration')}
-            info={t(`This section allows you to configure how to use the slice
-               to generate annotations.`)}
+            info={t(`This section allows you to configure how to use the slice to generate annotations.`)}
           >
             {(annotationType === ANNOTATION_TYPES.EVENT ||
               annotationType === ANNOTATION_TYPES.INTERVAL) && (

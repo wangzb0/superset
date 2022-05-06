@@ -177,9 +177,11 @@ class CsvToDatabaseForm(UploadToDatabaseForm):
     usecols = JsonListField(
         _("Use Columns"),
         default=None,
+        # description=_(
+        #     "Json list of the column names that should be read. If not None, only these columns will be read from the file."
+        # ),
         description=_(
-            "Json list of the column names that should be read. "
-            "If not None, only these columns will be read from the file."
+            "要读取的列名的Json列表。如果不是没有，则只从文件中读取这些列。"
         ),
         validators=[Optional()],
     )
@@ -441,9 +443,11 @@ class ColumnarToDatabaseForm(UploadToDatabaseForm):
     usecols = JsonListField(
         _("Use Columns"),
         default=None,
+        # description=_(
+        #     "Json list of the column names that should be read. If not None, only these columns will be read from the file."
+        # ),
         description=_(
-            "Json list of the column names that should be read. "
-            "If not None, only these columns will be read from the file."
+            "要读取的列名的Json列表。如果不是没有，则只从文件中读取这些列。"
         ),
         validators=[Optional()],
     )
