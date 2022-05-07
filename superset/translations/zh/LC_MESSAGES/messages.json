@@ -2217,10 +2217,10 @@
       "Download to CSV": [""],
       "Filter results": ["过滤结果"],
       "The number of results displayed is limited to %(rows)d by the configuration DISPLAY_MAX_ROWS. Please add additional limits/filters or download to csv to see more rows up to the %(limit)d limit.": [
-        "显示的结果数被配置DISPLAY_MAX_ROWS限制为%(rows)d。请添加额外的限制/过滤器或下载到csv查看更多的行到%(限制)d限制。"
+        "显示的结果数被配置DISPLAY_MAX_ROWS限制为%(rows)d。请添加额外的限制/过滤器或下载到csv查看更多的行到%(limit)d限制。"
       ],
       "The number of results displayed is limited to %(rows)d. Please add additional limits/filters, download to csv, or contact an admin to see more rows up to the %(limit)d limit.": [
-        "显示的结果数限制为%(行)d。请添加额外的限制/过滤器，下载到csv，或联系管理员查看更多的行到%(限制)d限制。"
+        "显示的结果数限制为%(rows)d。请添加额外的限制/过滤器，下载到csv，或联系管理员查看更多的行到%(limit)d限制。"
       ],
       "The number of rows displayed is limited to %(rows)d by the query": ["查询显示的行数限制为%(rows)d"],
       "The number of rows displayed is limited to %(rows)d by the limit dropdown.": [
