@@ -55,7 +55,7 @@ services:
     command: ["/app/docker/docker-bootstrap.sh", "app"]
     restart: unless-stopped
     ports:
-      - 8088:8088
+      - 8080:8088
     user: *superset-user
     depends_on: *superset-depends-on
     volumes: *superset-volumes
@@ -67,7 +67,7 @@ services:
     build: ./superset-websocket
     image: superset-websocket
     ports:
-      - 8080:8080
+      - 8888:8080
     depends_on:
       - redis
     # Mount everything in superset-websocket into container and
