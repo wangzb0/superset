@@ -171,7 +171,8 @@ SECRET_KEY = CHANGE_ME_SECRET_KEY
 
 # The SQLAlchemy connection string.
 # SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(DATA_DIR, "superset.db")
-SQLALCHEMY_DATABASE_URI = 'mysql://root:root@192.168.2.105:3307/superset?charset=utf8'
+# SQLALCHEMY_DATABASE_URI = 'mysql://root:root@192.168.2.105:3307/superset?charset=utf8'
+SQLALCHEMY_DATABASE_URI = 'mysql://root:Pintechs1234@121.40.58.221:3307/superset?charset=utf8'
 # SQLALCHEMY_DATABASE_URI = 'mysql://myapp@localhost/myapp'
 # SQLALCHEMY_DATABASE_URI = 'postgresql://root:password@localhost/myapp'
 
