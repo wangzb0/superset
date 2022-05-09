@@ -36,11 +36,11 @@ services:
 
   db:
     env_file: docker/.env-non-dev
-    image: mysqlclient:2.1.0
+    image: postgres:10
     container_name: superset_db
     restart: unless-stopped
     volumes:
-      - db_home:/var/lib/mysqlclient/data
+      - db_home:/var/lib/postgresql/data
 
   superset:
     env_file: docker/.env-non-dev
