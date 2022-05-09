@@ -21,9 +21,9 @@ x-superset-depends-on: &superset-depends-on
 x-superset-volumes: &superset-volumes
   # /app/pythonpath_docker will be appended to the PYTHONPATH in the final container
   - ./docker:/app/docker
-  - superset_home:/app/superset_home
   - ./superset:/app/superset
   - ./superset-frontend:/app/superset-frontend
+  - superset_home:/app/superset_home
 
 version: "3.7"
 services:
@@ -36,11 +36,11 @@ services:
 
   db:
     env_file: docker/.env-non-dev
-    image: postgres:10
+    image: mysqlclient:2.1.0
     container_name: superset_db
     restart: unless-stopped
     volumes:
-      - db_home:/var/lib/postgresql/data
+      - db_home:/var/lib/mysqlclient/data
 
   superset:
     env_file: docker/.env-non-dev
