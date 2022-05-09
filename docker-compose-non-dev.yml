@@ -63,6 +63,15 @@ services:
     user: "root"
     volumes: *superset-volumes
 
+  superset-node:
+    image: node:16
+    container_name: superset_node
+    command: ["/app/docker/docker-frontend.sh"]
+    env_file: docker/.env-non-dev
+    depends_on: *superset-depends-on
+    user: "root"
+    volumes: *superset-volumes
+
   superset-worker:
     image: *superset-image
     container_name: superset_worker
